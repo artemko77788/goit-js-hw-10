@@ -25,6 +25,6 @@ export default function seachCountry(event) {
       }
     })
     .catch(error => {
-      Notiflix.Notify.failure('Something wrong');
+      Notiflix.Notify.failure('Oops, there is no country with that name');
     });
 }
