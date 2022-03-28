@@ -8,8 +8,4 @@ const refs = {
   input: document.querySelector('#search-box'),
 };
 
-refs.input.addEventListener('input', debounce(fetchCountries, DEBOUNCE_DELAY));
-
-function fetchCountries(event) {
-  seachCountry(event);
-}
+refs.input.addEventListener('input', debounce(seachCountry, DEBOUNCE_DELAY));
